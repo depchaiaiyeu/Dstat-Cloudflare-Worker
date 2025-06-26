@@ -1,0 +1,22 @@
+name = "request-monitor"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+# KV namespace để lưu analytics data
+[[kv_namespaces]]
+binding = "ANALYTICS_KV"
+id = "your_kv_namespace_id"
+preview_id = "your_preview_kv_namespace_id"
+
+# Environment variables (optional)
+[vars]
+ENVIRONMENT = "production"
+
+# Build configuration
+[build]
+command = "npm run build"
+
+# Routes (optional - để map custom domain)
+# routes = [
+#   "your-domain.com/*"
+# ]
